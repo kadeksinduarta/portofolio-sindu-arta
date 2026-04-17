@@ -20,6 +20,7 @@ export function Navbar() {
     { name: 'Tentang', href: '#about' },
     { name: 'Keahlian', href: '#skills' },
     { name: 'Pencapaian', href: '#achievements' },
+    { name: 'Pengalaman', href: '#experience' },
     { name: 'Organisasi', href: '#organizations' },
     { name: 'Proyek', href: '#projects' },
     // { name: 'Sertifikat', href: '#certificates' },

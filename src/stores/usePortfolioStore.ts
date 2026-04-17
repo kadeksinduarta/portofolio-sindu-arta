@@ -1,11 +1,12 @@
 import { create } from 'zustand';
-import { Project, Achievement, Organization, Certificate } from '../types';
+import { Project, Achievement, Organization, Certificate, Experience } from '../types';
 
 interface PortfolioState {
   projects: Project[];
   achievements: Achievement[];
   organizations: Organization[];
   certificates: Certificate[];
+  experiences: Experience[];
 }
 
 export const usePortfolioStore = create<PortfolioState>(() => ({
@@ -22,7 +23,7 @@ export const usePortfolioStore = create<PortfolioState>(() => ({
       id: '2',
       title: 'Siiday | Habit Tracker ',
       description: 'Siiday adalah platform habit tracker yang dirancang untuk membantu pengguna membangun kebiasaan baik dan mencapai tujuan mereka. Dengan antarmuka yang modern dan responsif, Siiday memungkinkan pengguna untuk melacak kebiasaan mereka dengan mudah dan cepat.',
-      imageUrl: '../Siiday.png',
+      imageUrl: '../Siday.png',
       link: 'https://siiday.sinduarta.my.id',
       technologies: ['React', 'Tailwind CSS', 'Laravel'],
     },
@@ -89,6 +90,24 @@ export const usePortfolioStore = create<PortfolioState>(() => ({
       issuer: 'Vercel Academy',
       date: '2024',
       imageUrl: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop',
+    }
+  ],
+  experiences: [
+    {
+      id: '1',
+      role: 'Web Developer Wordpress',
+      company: 'Blue Creative',
+      duration: '6 Bulan',
+      period: 'Juni 2023 - Desember 2023',
+      description: 'Belajar Membuat Undangan Digital di wordpress dan mengelola pesanan undangan digital'
+    },
+    {
+      id: '2',
+      role: 'Web Developer Wordpress',
+      company: 'Blue Creative',
+      duration: '3 Bulan',
+      period: '2024',
+      description: 'Frelance membuat undangan digital WFH'
     }
   ]
 }));

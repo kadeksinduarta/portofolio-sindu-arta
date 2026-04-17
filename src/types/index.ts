@@ -31,3 +31,12 @@ export interface Certificate {
   date: string;
   imageUrl: string;
 }
+
+export interface Experience {
+  id: string;
+  role: string;
+  company: string;
+  duration: string;
+  period: string;
+  description: string;
+}

@@ -10,7 +10,7 @@ export function OrganizationsList() {
   const organizations = usePortfolioStore((state) => state.organizations);
 
   return (
-    <section className="py-24 bg-white dark:bg-zinc-950" id="organizations">
+    <section className="py-24 bg-zinc-50 dark:bg-zinc-900/30" id="organizations">
       <div className="container mx-auto px-6 max-w-5xl">
         <SectionTitle
           title="Pengalaman Organisasi"

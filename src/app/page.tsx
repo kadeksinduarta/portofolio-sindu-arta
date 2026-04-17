@@ -3,6 +3,7 @@ import { Hero } from '../components/features/Hero';
 import { AboutMe } from '../components/features/AboutMe';
 import { TechStack } from '../components/features/TechStack';
 import { AchievementsList } from '../components/features/AchievementsList';
+import { ExperienceList } from '../components/features/ExperienceList';
 import { OrganizationsList } from '../components/features/OrganizationsList';
 import { ProjectGallery } from '../components/features/ProjectGallery';
 import { CertificatesGallery } from '../components/features/CertificatesGallery';
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutMe />
       <TechStack />
       <AchievementsList />
+      <ExperienceList />
       <OrganizationsList />
       <ProjectGallery />
       {/* <CertificatesGallery /> */}
