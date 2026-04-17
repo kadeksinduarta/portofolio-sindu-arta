@@ -68,10 +68,6 @@ export function ProjectGallery() {
                   </p>
 
                   <div className="flex items-center gap-4 pt-4 border-t border-zinc-100 dark:border-zinc-800/60 mt-auto">
-                    <a href={project.github || '#'} className="text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors flex items-center gap-1.5 text-sm font-medium">
-                      <GithubIcon size={16} />
-                      <span>Source</span>
-                    </a>
                     <a href={project.link || '#'} className="text-zinc-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5 text-sm font-medium ml-auto">
                       <span>Visit</span>
                       <ExternalLink size={16} />

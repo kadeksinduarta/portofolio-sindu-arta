@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun } from 'lucide-react';
-import { useThemeStore } from '../../stores';
+import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isDarkMode, toggleTheme } = useThemeStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +22,7 @@ export function Navbar() {
     { name: 'Pencapaian', href: '#achievements' },
     { name: 'Organisasi', href: '#organizations' },
     { name: 'Proyek', href: '#projects' },
-    { name: 'Sertifikat', href: '#certificates' },
+    // { name: 'Sertifikat', href: '#certificates' },
   ];
 
   return (
@@ -52,21 +50,10 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-700"></div>
-          <button
-            onClick={toggleTheme}
-            className="p-2 -ml-4 rounded-full text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100 dark:hover:text-white dark:hover:bg-zinc-800 transition-all focus:outline-none"
-            aria-label="Toggle theme"
-          >
-            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
         </nav>
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-2">
-          <button onClick={toggleTheme} className="p-2 text-zinc-500">
-            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-zinc-900 dark:text-white">
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className={`${inter.className} min-h-screen antialiased dark class`}>
+      <body className={`${inter.className} min-h-screen antialiased`}>
         {children}
       </body>
     </html>
